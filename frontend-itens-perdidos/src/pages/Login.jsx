@@ -46,7 +46,7 @@ export default function Login() {
       }}
     >
       <div className="flex bg-white rounded-xl shadow-lg overflow-hidden w-[900px] h-[500px]">
-        <div className="w-1/2 bg-purple-700 text-white flex flex-col items-center justify-center p-10 relative">
+        <div className="w-1/2 bg-[#550055] text-white flex flex-col items-center justify-center p-10 relative">
           <div className="text-center flex flex-col items-center">
             <h1 className="text-4xl md:text-5x2 font-bold">Bem-vindo(a)!</h1>
             <img
@@ -90,14 +90,14 @@ export default function Login() {
 
           <button
             type="submit"
-            className="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 rounded-md transition"
+            className="w-full bg-[#550055] hover:bg-[#320033] text-white py-2 rounded-md transition"
           >
             Entrar
           </button>
 
           <p className="text-sm text-center mt-4">
             Não tem conta?{' '}
-            <Link to="/register" className="text-purple-600 hover:underline">
+            <Link to="/register" className="text-[#550055] hover:underline">
               Crie aqui
             </Link>
           </p>

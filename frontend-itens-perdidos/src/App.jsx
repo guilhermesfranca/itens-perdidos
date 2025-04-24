@@ -33,7 +33,12 @@ function AppContent() {
         element={
           usuario ? (
             <Layout>
-              <div className="bg-gradient-to-r from-purple-950 to-purple-600 shadow-md flex justify-between items-center p-4">
+              <div
+  className="shadow-md flex justify-between items-center p-4"
+  style={{
+    background: "linear-gradient(to right, #550055, #320033)",
+  }}
+>
               <img
                   src={logoFinder} // Exibindo a imagem no lugar do título
                   alt="Itens Perdidos Logo"
@@ -46,7 +51,7 @@ function AppContent() {
                   Sair
                 </button>
               </div>
-              <p className="text-center text-purple-100 bg-purple-700 py-2">
+              <p className="text-center text-purple-100 py-2" style={{ backgroundColor: "#320033" }}>
                 Bem-vindo(a), {usuario?.nome || 'Usuário'}!
               </p>
               <CadastroItem />
